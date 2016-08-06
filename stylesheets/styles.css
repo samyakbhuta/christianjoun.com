@@ -7,6 +7,25 @@ html {
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.the-secret-room-container {
+  order: 1;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.the-dj-cj-container {
+  order: 2;
   padding-top: 1%;
   padding-left: 5%;
   display: flex;
@@ -126,6 +145,20 @@ html {
   font-size: 1.5em;
   color: crimson;
   text-decoration: underline wavy red;
+}
+
+.mixes {
+  flex-grow:1;
+  font-family: 'Bungee', cursive;
+  font-size: 1.4em;
+  color: #0020FF;
+}
+
+
+.soundcloud {
+  flex-grow: 1;
+  color: crimson;
+  padding-top: 3%;
 }
 
 a {
