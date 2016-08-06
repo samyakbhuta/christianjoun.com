@@ -1,50 +1,47 @@
 @import 'https://fonts.googleapis.com/css?family=BioRhyme|Black+Ops+One|Bungee|Bungee+Shade|Monoton';
 
-/*@media (max-width: @screen-xs) {
-    body{font-size: 10px;}
-}
-
-@media (max-width: @screen-sm) {
-    body{font-size: 14px;}
-}
-*/
-
 html {
   background: radial-gradient(#000, #111);
   color: red;
-  /*overflow: hidden;*/
-  height: 100%;
   user-select: none;
 }
 
-.error {
-  /*text-align: center;*/
+.container {
+  padding-top: 3%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.presenting {
+  order: 1;
+  flex-grow:1;
+  font-family: 'Bungee', cursive;
+  font-size: 1.4em;
+  width: 350px;
+  color: #0020FF;
+  padding-bottom: 3%;
+  animation: noise-3 1s linear infinite;
+}
+
+.title {
+  order: 2;
+  flex-grow: 1;
+  flex-basis: content;
   font-family: 'Bungee', cursive;
   font-size: 5.4em;
   font-style: italic;
-  width: 100px;
-  height: 60px;
+  width: 350px;
   line-height: 60px;
-  padding-top: 50px;
-  margin: auto;
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*right: 0;*/
   animation: noise 2s linear infinite;
   overflow: default;
 }
 
-.error:after {
+.title:after {
   content: 'The Secret Room';
-  font-family: 'Bungee', cursive;
   font-size: 1.02em;
-  font-style: italic;
-  text-align: center;
-  width: 150px;
-  height: 60px;
-  line-height: 60px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -56,15 +53,9 @@ html {
   animation: noise-1 .2s linear infinite;
 }
 
-.error:before {
+.title:before {
   content: 'The Secret Room';
-  font-family: 'Bungee', cursive;
-  font-size: 1.04em;
-  font-style: italic;
-  text-align: center;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
+  font-size: 1.01em;
   margin: auto;
   position: absolute;
   top: 0;
@@ -77,18 +68,64 @@ html {
 }
 
 .info {
-  /*text-align: center;*/
+  order: 3;
+  flex-grow:1;
   font-family: 'Bungee', cursive;
-  font-size: 0.6em;
+  font-size: 1.2em;
   font-style: italic;
-  width: 650px;
-  height: 60px;
-  line-height: 0px;
-  /*margin: auto;*/
-  /*position: absolute;*/
   color: orange;
+  padding-top: 1%;
   animation: noise-3 1s linear infinite;
 }
+
+.featuring {
+  order: 4;
+  flex-grow:1;
+  font-family: 'Bungee', cursive;
+  font-size: 1.4em;
+  width: 350px;
+  padding-top: 4%;
+  color: #0020FF;
+  animation: noise-3 1s linear infinite;
+}
+
+.djList {
+  order: 5;
+  flex-grow:1;
+  font-family: 'Bungee', cursive;
+  font-size: 1.9em;
+  width: 350px;
+  padding-top: 2%;
+  color: red;
+  animation: noise-3 1s linear infinite;
+}
+
+.atTheRate {
+  order: 6;
+  flex-grow:1;
+  font-family: 'Bungee', cursive;
+  font-size: 1.4em;
+  width: 350px;
+  padding-top: 4%;
+  color: #0020FF;
+  animation: noise-3 1s linear infinite;
+}
+
+.address {
+  order: 7;
+  flex-grow:1;
+  font-family: 'Bungee', cursive;
+  font-size: 1.1em;
+  width: 350px;
+  padding-top: 2%;
+  color: #E94B30;
+  animation: noise-3 1s linear infinite;
+}
+
+a:link    { color: #0020FF }  /* unvisited links */
+a:visited { color: #0c0 }  /* visited links   */
+a:hover   { color: #00c }  /* user hovers     */
+a:active  { color: #ccc }  /* active links    */
 
 @keyframes noise-1 {
   0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
