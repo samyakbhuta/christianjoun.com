@@ -124,12 +124,18 @@ html {
 
 .timings {
   font-size: 1.5em;
+  color: crimson;
+  text-decoration: underline wavy red;
 }
 
-a:link    { color: #0020FF }  /* unvisited links */
-a:visited { color: #0c0 }  /* visited links   */
-a:hover   { color: #00c }  /* user hovers     */
-a:active  { color: #ccc }  /* active links    */
+a {
+ text-decoration: underline wavy red;
+}
+
+a:link    { color: blue }  /* unvisited links */
+a:visited { color: #E94B30 }  /* visited links   */
+a:hover   { color: red }  /* user hovers     */
+a:active  { color: crimson }  /* active links    */
 
 @keyframes noise-1 {
   0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
